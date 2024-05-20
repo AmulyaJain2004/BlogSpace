@@ -1,1 +1,1 @@
-# Astronomical_Data_Analysis_and_Visualization
+# Data_Analysis_and_Visualization
