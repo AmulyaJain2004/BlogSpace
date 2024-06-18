@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main>
+        <div><h1>SignUp Form</h1></div>
+        <form method="post" class="signup">
+            {% csrf_token %}
+            <div>
+                <label for="">Value 1</label>
+                <input type="text" name='num1' value="{{n1}}">
+            </div>
+            <div>
+                <label for="">Value 2</label>
+                <input type="text" name='num2' value="{{n2}}">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <input type="text" name="output" value={{output}} >
+        </form>
+    </main>
+
+{% endblock %}

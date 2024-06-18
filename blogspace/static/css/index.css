@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(160, 158, 157);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border: black solid 2px;
+    display: flex;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.navbar {
+    display: flex;
+    gap: 3rem;
+    margin-left: 60%;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0;
+}
+/* ---------------------------- header ends here --------------------------------- */
+
+main {
+    border: 2px solid black;
+}
