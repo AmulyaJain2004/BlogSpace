@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}BlogSpace{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block extra_links %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="/app/home/">BlogSpace</a></div>
+            <ul>
+                <li><a href="/app/home/">Home</a></li>
+                <li><a href="/app/getstart/">Get Started</a></li>
+                <li><a href="/app/tips/">Tips</a></li>
+                <li><a href="/app/contactus/">Contact Us</a></li>
+                <button><a href="/app/signin/">Sign In</a></button>
+                <button><a href="/app/signup/">Sign Up</a></button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="/templ/index.html">Home</a></li>
+                <li><a href="/templ/getstart.html">Get Started</a></li>
+                <li><a href="/templ/tips.html">Tips</a></li>
+                <li><a href="/templ/contactus.html">Contact Us</a></li>
+                <li><a href="/templ/signin.html">Sign In</a></li>
+                <li><a href="/templ/signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>BlogSpace Website Copyright &copy; 2024 | Designed by <span class="Designer">Amulya Jain</span> | &nbsp; All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

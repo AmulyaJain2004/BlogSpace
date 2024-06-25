@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="Main">
+        <div><h2>Blog</h2></div>
+        <form method="post" class="signup">
+            <div>
+                <label for="">Title</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Content</label>
+                <input type="text">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <input type="text" name="output">
+        </form>
+    </div>
+{% endblock %}

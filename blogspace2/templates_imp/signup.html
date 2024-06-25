@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    {% comment %} <div><h1>SignUp Form</h1></div>
+    <form method="post" class="signup">
+        {% csrf_token %}
+        <div>
+            <label for="">Value 1</label>
+            <input type="text" name='num1' value="{{n1}}">
+        </div>
+        <div>
+            <label for="">Value 2</label>
+            <input type="text" name='num2' value="{{n2}}">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+        <input type="text" name="output" value={{output}} >
+    </form> {% endcomment %}
+
+    <div class="Main">
+        <div><h1>SignUp</h1></div>
+        <form method="post" class="signup">
+            <div>
+                <label for="">Username</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="text" name='num2'>
+            </div>
+            <div>
+                <label for="">Phone Number</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">First name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Last name</label>
+                <input type="text">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <input type="text" name="output">
+        </form>
+    </div>
+{% endblock %}
